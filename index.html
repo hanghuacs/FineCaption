@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FINEMATCH: Aspect-based Fine-grained Image and Text Mismatch Detection and Correction">
+  <meta name="keywords" content="Aspect-based Image and Text Analysis, Compositionality">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FINEMATCH: Aspect-based Fine-grained Image and Text Mismatch Detection and Correction</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/Icon3.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+  <div class="navbar-item has-dropdown is-hoverable">
+        <p style="font-size:18px; display: inline; margin-right: -2px; margin-top: 12px;">🔥</p>
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hanghuacs.github.io/MMComposition/">
+            <b>MMComposition</b> 
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><img src="./static/images/Icon3.png" width="50" /><span class="rainbow_text_animated">FINEMATCH</span>: Aspect-based Fine-grained Image and Text Mismatch Detection and Correction</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://hanghuacs.owlstown.net">Hang Hua</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://jshi31.github.io/jingshi/">Jing Shi</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://kushalkafle.com">Kushal Kafle</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sjenni.github.io">Simon Jenni</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://dwan.ch">Daoan Zhang</a><sup>1</sup>,
+            </span><br>
+            <span class="author-block">
+              <a href="https://www.surrey.ac.uk/people/john-collomosse">John Collomosse</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://research.adobe.com/person/scott-cohen/">Scott Cohen</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Rochester,</span>
+            <span class="author-block"><sup>2</sup>Adobe Research</span><br>
+            <span class="author-block">
+                      <h1 class="title is-4"><font color="#B03A2E"><b>ECCV 2024</b></font></h1>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01467.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.14715"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/hanghuacs/finematch/tree/main"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/hanghuacs/finematch/tree/main"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent progress in large-scale pre-training has led to the development of advanced vision-language models (VLMs) with remarkable proficiency in comprehending and generating multimodal content. Despite the impressive ability to perform complex reasoning for VLMs, current models often struggle to effectively and precisely capture the compositional information on both the image and text sides. To address this, we propose FINEMATCH, a new aspect-based fine-grained text and image matching benchmark, focusing on text and image mismatch detection and correction. This benchmark introduces a novel task for boosting and evaluating the VLMs’ compositionality for aspect-based fine-grained text and image matching. In this task, models are required to identify mismatched aspect phrases within a caption, determine the aspect’s class, and propose corrections for an image-text pair that may contain between 0 and 3 mismatches. To evaluate the models’ performance on this new task, we propose a new evaluation metric named ITM-IoU for which our experiments show a high correlation to human evaluation. In addition, we also provide a comprehensive experimental analysis of existing mainstream VLMs, including fully supervised learning and in-context learning settings. We have found that models trained on FINEMATCHdemonstrate enhanced proficiency in detecting fine-grained text and image mismatches. Moreover, models (e.g., GPT-4V, Gemini Pro Vision) with strong abilities to perform multimodal in-context learning are not as skilled at fine-grained compositional image and text matching analysis. With FINEMATCH, we are able to build a system for text-to-image generation hallucination detection and correction.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Introduction</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Task Illustration</h3>
+        <div class="content has-text-justified">
+          <img src="./static/images/teaser.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+          <p class="is-bold">
+            Given a text and image pair, FINEMATCH enables VLMs to detect the mismatched aspects
+and the aspect classes in the caption and then give the corresponding corrections.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <img src="./static/images/source_distribution.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+          <p class="is-bold">
+            The initial data source distribution (inner circle) and domain distribution (outer circle) for
+the FINEMATCH training set (left) and test set (right).
+          </p>
+        </div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+  @article{hua2024finematch,
+  title={FINEMATCH: Aspect-based Fine-grained Image and Text Mismatch Detection and Correction},
+  author={Hua, Hang and Shi, Jing and Kafle, Kushal and Jenni, Simon and Zhang, Daoan and Collomosse, John and Cohen, Scott and Luo, Jiebo},
+  journal={arXiv preprint arXiv:2404.14715},
+  year={2024}
+}
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
