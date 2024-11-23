@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="FINEMATCH: Aspect-based Fine-grained Image and Text Mismatch Detection and Correction">
+        content="FINECAPTION: Compositional Image Captioning Focusing on Wherever You Want at Any Granularity">
   <meta name="keywords" content="Aspect-based Image and Text Analysis, Compositionality">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FINEMATCH: Aspect-based Fine-grained Image and Text Mismatch Detection and Correction</title>
+  <title>FINECAPTION: Compositional Image Captioning Focusing on Wherever You Want at Any Granularity</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -71,24 +71,25 @@
             <span class="author-block">
               <a href="https://hanghuacs.owlstown.net">Hang Hua</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jshi31.github.io/jingshi/">Jing Shi</a><sup>2</sup>,</span>
+              <a href="https://research.adobe.com/person/qing-liu/">Qing Liu</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://kushalkafle.com">Kushal Kafle</a><sup>2</sup>,
+              <a href="https://owenzlz.github.io">Lingzhi Zhang</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://sjenni.github.io">Simon Jenni</a><sup>2</sup>,
+              <a href="https://research.adobe.com/person/jing-shi/">Jing Shi</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://dwan.ch">Daoan Zhang</a><sup>1</sup>,
-            </span><br>
+              <a href="https://research.adobe.com/person/zhifei-zhang/">Zhifei Zhang</a><sup>1</sup>,
+            </span>
+            <br>
             <span class="author-block">
-              <a href="https://www.surrey.ac.uk/people/john-collomosse">John Collomosse</a><sup>2</sup>,
+              <a href="https://yilinwang.org">Yilin Wang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://research.adobe.com/person/scott-cohen/">Scott Cohen</a><sup>2</sup>,
+              <a href="https://research.adobe.com/person/jianming-zhang/">Jianming Zhang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a><sup>1</sup>
+              <a href="https://www.cs.rochester.edu/u/jluo/">Jiebo Luo</a><sup>1</sup>,
             </span>
           </div>
 
@@ -104,7 +105,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/01467.pdf"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -113,7 +114,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2404.14715"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -125,7 +126,7 @@
               
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/hanghuacs/finematch/tree/main"
+                <a href="https://github.com/hanghuacs/FineCaption"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -135,7 +136,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/hanghuacs/finematch/tree/main"
+                <a href="https://github.com/hanghuacs/FineCaption"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
@@ -159,7 +160,26 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent progress in large-scale pre-training has led to the development of advanced vision-language models (VLMs) with remarkable proficiency in comprehending and generating multimodal content. Despite the impressive ability to perform complex reasoning for VLMs, current models often struggle to effectively and precisely capture the compositional information on both the image and text sides. To address this, we propose FINEMATCH, a new aspect-based fine-grained text and image matching benchmark, focusing on text and image mismatch detection and correction. This benchmark introduces a novel task for boosting and evaluating the VLMs’ compositionality for aspect-based fine-grained text and image matching. In this task, models are required to identify mismatched aspect phrases within a caption, determine the aspect’s class, and propose corrections for an image-text pair that may contain between 0 and 3 mismatches. To evaluate the models’ performance on this new task, we propose a new evaluation metric named ITM-IoU for which our experiments show a high correlation to human evaluation. In addition, we also provide a comprehensive experimental analysis of existing mainstream VLMs, including fully supervised learning and in-context learning settings. We have found that models trained on FINEMATCHdemonstrate enhanced proficiency in detecting fine-grained text and image mismatches. Moreover, models (e.g., GPT-4V, Gemini Pro Vision) with strong abilities to perform multimodal in-context learning are not as skilled at fine-grained compositional image and text matching analysis. With FINEMATCH, we are able to build a system for text-to-image generation hallucination detection and correction.
+          The advent of large Vision-Language Models (VLMs) has
+significantly advanced multimodal tasks, enabling more sophisticated and accurate reasoning across various applications, including image and video captioning, visual question
+answering, and cross-modal retrieval. Despite their superior capabilities, VLMs struggle with fine-grained image
+regional composition information perception. Specifically,
+they have difficulty accurately aligning the segmentation
+masks with the corresponding semantics and precisely de-
+scribing the compositional aspects of the referred regions.
+However, compositionality – the ability to understand and
+generate novel combinations of known visual and textual
+components – is critical for facilitating coherent reasoning
+and understanding across modalities by VLMs. To address
+this issue, we propose FINECAPTION, a novel VLM that
+can recognize arbitrary masks as referential inputs and pro-
+cess high-resolution images for compositional image cap-
+tioning at different granularity levels. To support this endeavor, we introduce COMPOSITIONCAP, a new dataset
+for multi-grained region compositional image captioning,
+which introduces the task of compositional attribute-aware
+regional image captioning. Empirical results demonstrate the effectiveness of our proposed model compared to other
+state-of-the-art VLMs. Additionally, we analyze the capabilities of current VLMs in recognizing various visual
+prompts for compositional region image captioning, highlighting areas for improvement in VLM design and training.
           </p>
         </div>
       </div>
@@ -178,21 +198,22 @@
         <!-- Interpolating. -->
         <h3 class="title is-4">Task Illustration</h3>
         <div class="content has-text-justified">
-          <img src="./static/images/teaser.png"
+          <img src="./static/images/teaser-1.pdf"
                  class="interpolation-image"
                  alt="Interpolate start reference image."/>
           <p class="is-bold">
-            Given a text and image pair, FINEMATCH enables VLMs to detect the mismatched aspects
-and the aspect classes in the caption and then give the corresponding corrections.
+            We propose FINECAPTION, a novel Vision-Language model with the improved capabilities of Attribute-Aware Regional
+Captioning, Regional Dense Captioning, and Comprehensive Global Image Captioning. FINECAPTION can recognize arbitrary masks
+as referential inputs and process high-resolution images. Moreover, models trained using the traditional bounding boxes as region reference
+are inadequate to precisely describe the region of interest.
           </p>
         </div>
         <div class="content has-text-justified">
-          <img src="./static/images/source_distribution.png"
+          <img src="./static/images/model.pdf"
                  class="interpolation-image"
                  alt="Interpolate start reference image."/>
           <p class="is-bold">
-            The initial data source distribution (inner circle) and domain distribution (outer circle) for
-the FINEMATCH training set (left) and test set (right).
+            Overview of FINECAPTION: The model incorporates a mask-aware visual encoder and two high-resolution encoders (ConvNext and SAM), enabling precise recognition of mask references and the perception of detailed compositional and spatial information for images.
           </p>
         </div>
 
@@ -201,12 +222,7 @@ the FINEMATCH training set (left) and test set (right).
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>
-  @article{hua2024finematch,
-  title={FINEMATCH: Aspect-based Fine-grained Image and Text Mismatch Detection and Correction},
-  author={Hua, Hang and Shi, Jing and Kafle, Kushal and Jenni, Simon and Zhang, Daoan and Collomosse, John and Cohen, Scott and Luo, Jiebo},
-  journal={arXiv preprint arXiv:2404.14715},
-  year={2024}
-}
+  
     </code></pre>
   </div>
 </section>
