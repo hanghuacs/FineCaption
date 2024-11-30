@@ -1,7 +1,8 @@
 # FINECAPTION: Compositional Image Captioning Focusing on Wherever You Want at Any Granularity
-![](/static/images/teaser-1.svg "FINECAPTION is  a novel Vision-Language model with the improved capabilities of Attribute-Aware Regional
+FINECAPTION is  a novel Vision-Language model with the improved capabilities of Attribute-Aware Regional
 Captioning, Regional Dense Captioning, and Comprehensive Global Image Captioning. FINECAPTION can recognize arbitrary masks
-as referential inputs and process high-resolution images.")
+as referential inputs and process high-resolution images.
+![](/static/images/teaser-1.svg)
 
 ## ✏️ Citation
 ```bibtex
