@@ -6,6 +6,9 @@
   &nbsp;
   <a href="https://huggingface.co/hhua2/finecaption"><img src="https://img.shields.io/badge/Resource-Dataset-EFBF6A.svg"></a>
 </p>
+
+---
+
 ![](/static/images/teaser-1.svg)
 FINECAPTION is  a novel Vision-Language model with the improved capabilities of Attribute-Aware Regional
 Captioning, Regional Dense Captioning, and Comprehensive Global Image Captioning. FINECAPTION can recognize arbitrary masks
