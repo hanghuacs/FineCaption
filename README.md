@@ -15,6 +15,7 @@ Captioning, Regional Dense Captioning, and Comprehensive Global Image Captioning
 as referential inputs and process high-resolution images.
 
 ---
+<html>
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
@@ -113,6 +114,7 @@ as referential inputs and process high-resolution images.
     </div>
   </div>
 </section>
+</html>
 ---
 ## Install
 Please following the guide here to prepare the environment on **Linux OS**.
