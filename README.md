@@ -13,6 +13,26 @@
 FINECAPTION is  a novel Vision-Language model with the improved capabilities of Attribute-Aware Regional
 Captioning, Regional Dense Captioning, and Comprehensive Global Image Captioning. FINECAPTION can recognize arbitrary masks
 as referential inputs and process high-resolution images.
+
+---
+## Install
+Please following the guide here to prepare the environment on **Linux OS**.
+<!-- currently does not support windows and MacOS -->
+
+1. Clone this repository
+```bash
+https://github.com/hanghuacs/FineCaption.git
+cd FineCaption
+```
+
+2. Create environment and install package
+```Shell
+. init.sh
+```
+
+
+
+
 ## ✏️ Citation
 ```bibtex
 @article{hua2024finecaption,
