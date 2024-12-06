@@ -21,11 +21,6 @@ as referential inputs and process high-resolution images.
       <div class="column is-full-width">
         <h2 class="title is-3">Comparison of Models</h2>
         <div class="table-container">
-          <style>
-            table td, table th {
-              white-space: nowrap;
-            }
-          </style>
           <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
             <thead>
               <tr>
@@ -45,14 +40,36 @@ as referential inputs and process high-resolution images.
               </tr>
             </thead>
             <tbody>
+              <!-- Zero-shot learning -->
               <tr style="background-color:#e9edf6;">
                 <td colspan="9" style="text-align:center; font-weight:bold;"><i>Zero-Shot Learning</i></td>
               </tr>
               <tr>
                 <td>Kosmos-2</td><td>Bbox</td><td>224</td><td>256</td><td>9.21</td><td>0.14</td><td>1.98</td><td>1.07</td><td>37.69</td>
               </tr>
+              <tr>
+                <td>Alpha-CLIP-13B</td><td>Mask</td><td>336</td><td>576</td><td>13.89</td><td>0.51</td><td>5.94</td><td>2.68</td><td>42.01</td>
+              </tr>
+              <tr>
+                <td>Qwen2-VL-7B</td><td>Bbox</td><td>AnyRes</td><td>-</td><td>14.12</td><td>0.57</td><td>6.18</td><td>2.74</td><td>42.97</td>
+              </tr>
+              <tr style="background-color:#FFF9E3;">
+                <td>GPT-4o</td><td>Bbox</td><td>-</td><td>-</td><td>17.87</td><td>3.21</td><td>12.87</td><td>6.49</td><td>49.85</td>
+              </tr>
+              <!-- Supervised learning -->
+              <tr style="background-color:#e9edf6;">
+                <td colspan="9" style="text-align:center; font-weight:bold;"><i>Supervised Learning</i></td>
+              </tr>
+              <tr>
+                <td>Qwen2-VL-7B</td><td>Bbox</td><td>AnyRes</td><td>-</td><td>31.59</td><td>9.11</td><td>13.56</td><td>90.32</td><td>75.86</td>
+              </tr>
+              <tr style="background-color:#DAE8FC;">
+                <td><b>FINECAPTION-8B (ours)</b></td><td>Mask</td><td>1024</td><td>1024</td>
+                <td><b>41.05</b></td><td><b>14.46</b></td><td><b>22.01</b></td><td><b>127.95</b></td><td><b>80.97</b></td>
+              </tr>
             </tbody>
           </table>
+          <p class="is-bold">Table 2. Comparison of the capabilities of FINECAPTION and other related VLMs.</p>
         </div>
       </div>
     </div>
