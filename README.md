@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="examples/logo/finecaption_logo.png" height="120">
+  <img src="images/icon.webp" height="120">
 </p>
 <h1 align="center">FINECAPTION: Compositional Image Captioning Focusing on Wherever You Want at Any Granularity</h1>
 <h3 align="center">CVPR 2025</h3>
