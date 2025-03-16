@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="examples/logo/finecaption_logo.png" height="120">
+</p>
 # FINECAPTION: Compositional Image Captioning Focusing on Wherever You Want at Any Granularity
 <h3 align="center">CVPR 2025</h3>
 <p align="center">
