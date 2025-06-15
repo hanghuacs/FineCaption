@@ -8,7 +8,7 @@
   &nbsp;
   <a href="https://hanghuacs.github.io/FineCaption/"><img src="https://img.shields.io/badge/Website-ProjectPage-A55D35"></a>
   &nbsp;
-  <a href="https://huggingface.co/hhua2/finecaption"><img src="https://img.shields.io/badge/Resource-Dataset-EFBF6A.svg"></a>
+  <a href="https://huggingface.co/datasets/hhua2/CompositionCap"><img src="https://img.shields.io/badge/Resource-Dataset-EFBF6A.svg"></a>
 </p>
 
 ---
