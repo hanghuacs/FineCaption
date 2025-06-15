@@ -2,7 +2,7 @@
   <img src="/static/images/icon.webp" height="120">
 </p>
 <h1 align="center">FINECAPTION: Compositional Image Captioning Focusing on Wherever You Want at Any Granularity</h1>
-<h3 align="center">CVPR 2025</h3>
+<h3 align="center">CVPR 2025 (Data Released!)</h3>
 <p align="center">
   <a href="https://arxiv.org/pdf/2411.15411"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b.svg"></a>
   &nbsp;
